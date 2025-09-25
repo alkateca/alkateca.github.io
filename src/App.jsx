@@ -1,0 +1,29 @@
+import './App.css'
+
+function App() {
+
+  return (
+    <>
+      <body class="bg-gray-50">
+
+  <div id="container" class="grid grid-cols-1 md:grid-cols-4 h-screen">
+
+    <div id="sidebar" class="md:col-span-1 bg-gray-800 text-white p-6">
+        <h2 class="text-2xl font-bold mb-6">Alkateca</h2>
+        <h3 class="text-lg">about</h3>
+    </div>
+
+    <div id="content" class="md:col-span-3 p-8 overflow-y-auto">
+        <h1 class="text-3xl font-bold mb-4">Home</h1>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <p>Aqui ficará o conteúdo dos seus cards...</p>
+        </div>
+    </div>
+  </div>
+</body>
+
+    </>
+  )
+}
+
+export default App
