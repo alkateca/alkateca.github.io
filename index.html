@@ -1,24 +1,100 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-<body class="bg-gray-50">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alkateca</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'custom-dark': '#1a1a1a',
+                        'custom-gray': '#2c2c2c',
+                        'light-gray': '#a0aec0',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-custom-dark text-gray-300 font-sans sha">
+    <div class="flex min-h-screen">
+        <aside class="w-1/5 bg-gray-900 p-8 flex flex-col justify-between border-r-2 border-gray-800">
+            <div>
+                <div class="text-center mb-12">
+                        <img src="https://avatars.githubusercontent.com/u/169459971?v=4" alt="Logo" class="rounded-full mx-auto mb-4 border-2 border-white object-contain w-48 h-48">
+                    <h1 class="text-xl font-bold text-white">José Chesini</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li class="mb-4">
+                            <a href="#" class="flex items-center p-2 bg-gray-700 rounded-md text-white">
+                                <i class="fas fa-home w-6 text-center"></i>
+                                <span class="ml-3">HOME</span>
+                            </a>
+                        <li>
+                            <a href="#" class="flex items-center p-2 text-light-gray hover:bg-gray-700 hover:text-white rounded-md">
+                                <i class="fas fa-info-circle w-6 text-center"></i>
+                                <span class="ml-3">ABOUT</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="flex justify-center space-x-4 text-light-gray">
+                <a href="#" class="hover:text-white"><i class="fab fa-github"></i></a>
+                <a href="#" class="hover:text-white"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="hover:text-white"><i class="fas fa-envelope"></i></a>
+            </div>
+        </aside>
 
-  <div id="container" class="grid grid-cols-1 md:grid-cols-4 h-screen">
+        <main class="w-3/5 bg-custom-dark p-8 pt-16 pl-24">
+            <header class="mb-8">
+                <a href="#" class="text-lg text-white font-semibold">Alkateca</a>
+            </header>
 
-    <div id="sidebar" class="md:col-span-1 bg-gray-800 text-white p-6">
-        <h2 class="text-2xl font-bold mb-6">Alkateca</h2>
-        <h3 class="text-lg">about</h3>
+            <div class="space-y-8"> 
+                <article>
+                    <div class="flex items-center justify-between p-4 rounded-lg cursor-pointer hover:bg-gray-800">
+                        <div>
+                            <h2 class="text-2xl font-bold text-white mb-1">Portifólio</h2>
+                            <p class="text-gray-400">Projetos Finalizados</p>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-gray-400">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" />
+                        </svg>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="flex items-center justify-between p-4 rounded-lg cursor-pointer hover:bg-gray-800">
+                        <div>
+                            <h2 class="text-2xl font-bold text-white mb-1">Ideias</h2>
+                            <p class="text-gray-400">Projetos que estou desenvolvendo</p>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-gray-400">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18" />
+                        </svg>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="flex items-center justify-between p-4 rounded-lg cursor-pointer hover:bg-gray-800">
+                        <div>
+                            <h2 class="text-2xl font-bold text-white mb-1">About</h2>
+                            <p class="text-gray-400">Quem sou eu</p>
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-gray-400">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
+                        </svg>
+                    </div>
+                </article>
+            </div>
+        </main>
     </div>
-
-    <div id="content" class="md:col-span-3 p-8 overflow-y-auto">
-        <h1 class="text-3xl font-bold mb-4">Home</h1>
-        <div class="bg-white p-6 rounded-lg shadow-md">
-            <p>Aqui ficará o conteúdo dos seus cards...</p>
-        </div>
-    </div>
-  </div>
 </body>
 </html>
